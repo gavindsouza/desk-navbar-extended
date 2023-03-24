@@ -1,9 +1,9 @@
-from . import __version__ as app_version
+from . import __version__ as app_version  # noqa
 
 app_name = "desk_navbar_extended"
 app_title = "Desk Navbar Extended"
-app_publisher = "Gavin D\'souza"
-app_description = "Tweaks in Desk\'s Navbar to boost Productivity"
+app_publisher = "Gavin D'souza"
+app_description = "Tweaks in Desk's Navbar to boost Productivity"
 app_email = "gavin18d@gmail.com"
 app_license = "MIT"
 
@@ -12,7 +12,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/desk_navbar_extended/css/desk_navbar_extended.css"
-# app_include_js = "/assets/desk_navbar_extended/js/desk_navbar_extended.js"
+app_include_js = "/assets/desk_navbar_extended/js/desk_navbar_extended.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/desk_navbar_extended/css/desk_navbar_extended.css"
@@ -42,7 +42,7 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Role": "home_page"
 # }
 
 # Generators
@@ -56,21 +56,21 @@ app_license = "MIT"
 
 # add methods and filters to jinja environment
 # jinja = {
-#	"methods": "desk_navbar_extended.utils.jinja_methods",
-#	"filters": "desk_navbar_extended.utils.jinja_filters"
+# 	"methods": "desk_navbar_extended.utils.jinja_methods",
+# 	"filters": "desk_navbar_extended.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
 # before_install = "desk_navbar_extended.install.before_install"
-# after_install = "desk_navbar_extended.install.after_install"
+after_install = "desk_navbar_extended.setup.after_install"
 
 # Uninstallation
 # ------------
 
 # before_uninstall = "desk_navbar_extended.uninstall.before_uninstall"
-# after_uninstall = "desk_navbar_extended.uninstall.after_uninstall"
+after_uninstall = "desk_navbar_extended.setup.after_uninstall"
 
 # Desk Notifications
 # ------------------
@@ -83,11 +83,11 @@ app_license = "MIT"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-#	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-#	"Event": "frappe.desk.doctype.event.event.has_permission",
+# 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # DocType Class
@@ -95,7 +95,7 @@ app_license = "MIT"
 # Override standard doctype classes
 
 # override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
 # Document Events
@@ -103,32 +103,32 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
+# 	"*": {
+# 		"on_update": "method",
+# 		"on_cancel": "method",
+# 		"on_trash": "method"
+# 	}
 # }
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-#	"all": [
-#		"desk_navbar_extended.tasks.all"
-#	],
-#	"daily": [
-#		"desk_navbar_extended.tasks.daily"
-#	],
-#	"hourly": [
-#		"desk_navbar_extended.tasks.hourly"
-#	],
-#	"weekly": [
-#		"desk_navbar_extended.tasks.weekly"
-#	],
-#	"monthly": [
-#		"desk_navbar_extended.tasks.monthly"
-#	],
+# 	"all": [
+# 		"desk_navbar_extended.tasks.all"
+# 	],
+# 	"daily": [
+# 		"desk_navbar_extended.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"desk_navbar_extended.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"desk_navbar_extended.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"desk_navbar_extended.tasks.monthly"
+# 	],
 # }
 
 # Testing
@@ -140,14 +140,14 @@ app_license = "MIT"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "desk_navbar_extended.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "desk_navbar_extended.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-#	"Task": "desk_navbar_extended.task.get_dashboard_data"
+# 	"Task": "desk_navbar_extended.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -173,29 +173,29 @@ app_license = "MIT"
 # --------------------
 
 # user_data_fields = [
-#	{
-#		"doctype": "{doctype_1}",
-#		"filter_by": "{filter_by}",
-#		"redact_fields": ["{field_1}", "{field_2}"],
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_2}",
-#		"filter_by": "{filter_by}",
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_3}",
-#		"strict": False,
-#	},
-#	{
-#		"doctype": "{doctype_4}"
-#	}
+# 	{
+# 		"doctype": "{doctype_1}",
+# 		"filter_by": "{filter_by}",
+# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_2}",
+# 		"filter_by": "{filter_by}",
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_3}",
+# 		"strict": False,
+# 	},
+# 	{
+# 		"doctype": "{doctype_4}"
+# 	}
 # ]
 
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
-#	"desk_navbar_extended.auth.validate"
+# 	"desk_navbar_extended.auth.validate"
 # ]

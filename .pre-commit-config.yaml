@@ -1,0 +1,51 @@
+exclude: 'node_modules|.git'
+default_stages: [commit]
+fail_fast: false
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        files: "remote_actions.*"
+        exclude: ".*json$|.*txt$|.*csv|.*md"
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-ast
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [
+          'flake8-bugbear',
+        ]
+        args: ['--config', '.flake8']
+
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        exclude: ".*setup.py$"
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        additional_dependencies: ['click']
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.6
+    hooks:
+      - id: prettier
+        types_or: [javascript]
+        # Ignore any files that might contain jinja / bundles
+        exclude: |
+            (?x)^(
+                desk_navbar_extended/public/dist/.*|
+                .*node_modules.*|
+                .*boilerplate.*|
+                desk_navbar_extended/www/website_script.js|
+                desk_navbar_extended/templates/includes/.*|
+                desk_navbar_extended/public/js/lib/.*
+            )$
