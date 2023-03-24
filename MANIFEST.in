@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include desk_navbar_extended *.css
+recursive-include desk_navbar_extended *.csv
+recursive-include desk_navbar_extended *.html
+recursive-include desk_navbar_extended *.ico
+recursive-include desk_navbar_extended *.js
+recursive-include desk_navbar_extended *.json
+recursive-include desk_navbar_extended *.md
+recursive-include desk_navbar_extended *.png
+recursive-include desk_navbar_extended *.py
+recursive-include desk_navbar_extended *.svg
+recursive-include desk_navbar_extended *.txt
+recursive-exclude desk_navbar_extended *.pyc
