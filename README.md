@@ -6,10 +6,10 @@ Tweaks in Desk's Navbar to boost Productivity
 
 1. Show User & Site current time in Desk's Navbar Menu
 
-![](./.github/assets/user-time-same.png)
+![](./.github/assets/same-time_zone.png)
 *When User & Site TimeZones Match*
 
-![](./.github/assets/user-time-different.png)
+![](./.github/assets/different-time_zone.png)
 *When User & Site TimeZones are Different*
 
 2. Wider Awesomebar _[WIP]_

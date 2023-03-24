@@ -39,13 +39,11 @@ function clockUpdate() {
     const now_sys = new Date(frappe.datetime.convert_to_system_tz());
     clock_html = `
       <div ${container_style}>
-        <div>Site:</div><div ${container_item_style}>${formatTime(
-          now_sys,
-        )}</div>
         <div>User:</div><div ${container_item_style}>${formatTime(
           now_user,
         )}</div>
-      </div>`;
+        <div>Site:</div><div>${formatTime(now_sys)}</div>
+        </div>`;
   } else {
     const now_user = new Date(frappe.datetime.convert_to_user_tz());
     clock_html = `<div ${container_style}>
