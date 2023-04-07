@@ -12,7 +12,14 @@ Tweaks in Desk's Navbar to boost Productivity
 ![](./.github/assets/different-time_zone.png)
 *When User & Site TimeZones are Different*
 
-2. Wider Awesomebar _[WIP]_
+2. Wider Awesomebar
+
+![](./.github/assets/wider-awesomebar.png)
+
+3. Voice Search in Awesomebar _[WIP]_
+
+![](./.github/assets/audio_search-awesomebar.png)
+*Multi-language support powered by OpenAI*
 
 #### License
 

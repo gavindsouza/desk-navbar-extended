@@ -9,9 +9,9 @@ function padZero(x) {
 
 function base12(x) {
   if (x > 12) {
-    return (x = x - 12);
+    x = x - 12;
   } else if (x == 0) {
-    return (x = 12);
+    x = 12;
   }
   return x;
 }
