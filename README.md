@@ -2,6 +2,8 @@
 
 Tweaks in Desk's Navbar to boost Productivity
 
+[![Try on Frappe Cloud](./.github/assets/try-on-fc.png)](https://frappecloud.com/marketplace/apps/desk_navbar_extended?referrer=a6d8da54)
+
 ### Features
 
 1. Show User & Site current time in Desk's Navbar Menu
