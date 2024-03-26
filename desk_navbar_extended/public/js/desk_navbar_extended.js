@@ -59,4 +59,8 @@ setTimeout(() => {
     "id",
     "desk-navbar-extended-clock",
   );
+  $(".dropdown-navbar-user button:contains('Show Time')").attr(
+    "id",
+    "desk-navbar-extended-clock",
+  );
 }, 1000);
